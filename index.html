@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +13,6 @@
       --rule: #d7cdbd;
       --accent: #8b0000;
       --link: #1f4f8f;
-      --max-width: 860px;
     }
 
     * {
@@ -27,123 +26,63 @@
       font-family: Georgia, "Times New Roman", Times, serif;
       line-height: 1.75;
     }
-.article-shell {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-} 
+
     .page {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 32px 20px 60px;
     }
 
-    .masthead {
-      text-align: center;
-      border-top: 4px double var(--ink);
-      border-bottom: 1px solid var(--ink);
-      padding: 18px 0 14px;
-      margin-bottom: 22px;
-    }
-
-    .masthead .paper-name {
-      font-size: 1rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    .masthead .edition {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-    }
-
     .article-shell {
-      max-width: 900px;
-      margin: 0 auto
+      max-width: 980px;
+      margin: 0 auto;
       background: var(--paper);
       border: 1px solid #e7dece;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-      padding: 42px 30px 50px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      padding: 48px 56px 56px;
     }
 
     .headline-block {
       text-align: center;
-      margin-bottom: 26px;
-      padding-bottom: 20px;
+      margin-bottom: 34px;
+      padding-bottom: 24px;
       border-bottom: 1px solid var(--rule);
     }
 
-    .kicker {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.78rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
     h1 {
-      font-size: clamp(2.2rem, 4vw, 4rem);
-      line-height: 1.08;
-      margin: 0 0 10px;
-      font-weight: bold;
-    }
-
-    .subdeck {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.05rem;
-      color: var(--muted);
-      font-style: italic;
-    }
-
-    .meta {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      margin-top: 16px;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
+      font-size: clamp(2.4rem, 4.5vw, 4.4rem);
+      line-height: 1.02;
+      margin: 0 auto 14px;
+      font-weight: 700;
+      max-width: 12ch;
     }
 
     .content {
-      column-count: 2;
-      column-gap: 42px;
-      column-rule: 1px solid #eee4d5;
+      max-width: 760px;
+      margin: 0 auto;
       font-size: 1.08rem;
     }
 
     .content p {
-      margin: 0 0 1.2em;
-      text-align: justify;
-      orphans: 3;
-      widows: 3;
+      margin: 0 0 1.25em;
+      text-align: left;
     }
 
     .content p:first-of-type::first-letter {
       float: left;
-      font-size: 4.8rem;
+      font-size: 4.6rem;
       line-height: 0.9;
       padding-right: 10px;
-      padding-top: 8px;
+      padding-top: 6px;
       font-weight: bold;
       color: var(--ink);
     }
 
     h2 {
-      column-span: all;
-      font-size: 1.45rem;
-      margin: 1.8em 0 0.8em;
-      padding-top: 0.4em;
+      font-size: 1.5rem;
+      margin: 2em 0 0.8em;
+      padding-top: 0.5em;
       border-top: 1px solid var(--rule);
-      text-transform: none;
     }
 
     a {
@@ -156,8 +95,13 @@
       color: var(--accent);
     }
 
+    .chart-wrap {
+      margin: 30px auto 34px;
+      max-width: 760px;
+    }
+
     .footer-rule {
-      margin-top: 30px;
+      margin-top: 36px;
       border-top: 3px double var(--ink);
       padding-top: 12px;
       text-align: center;
@@ -168,16 +112,21 @@
     }
 
     @media (max-width: 800px) {
-      .content {
-        column-count: 1;
+      .page {
+        padding: 20px 14px 40px;
       }
 
       .article-shell {
         padding: 28px 18px 36px;
       }
 
+      .content {
+        max-width: 100%;
+        font-size: 1.02rem;
+      }
+
       h1 {
-        font-size: 2.25rem;
+        font-size: 2.3rem;
       }
 
       .content p:first-of-type::first-letter {
@@ -187,65 +136,138 @@
   </style>
 </head>
 <body>
-  
-    </header>
-
+  <div class="page">
     <main class="article-shell">
       <section class="headline-block">
         <h1>Can Silicon Valley Survive Without Immigrants?</h1>
-        </div>
       </section>
 
       <article class="content">
-        <p>Silicon Valley is one of the most economically important locations in the US, estimated to hold approximately <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$840 billion GPD</a>. The Calafornian area is the global and national hub of the tech and engineering industry, which is home to some of the most famous and successful companies such as Apple, Meta, Facebook and Tesla.</p>
+        <p>
+          Silicon Valley is one of the most economically important locations in the US, estimated to hold approximately
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$840 billion GPD</a>.
+          The Calafornian area is the global and national hub of the tech and engineering industry, which is home to some of the most famous and successful companies such as Apple, Meta, Facebook and Tesla.
+        </p>
 
-        <p>So, who makes this economic powerhouse run? Immigrants, approximately two-thirds. The region’s labour force, from software engineers and chip designers, reflects a long-standing dependence on workers born elsewhere. According to the <a href="https://www.spokesman.com/stories/2025/mar/11/two-thirds-of-silicon-valley-tech-workers-are-fore/" target="_blank" rel="noopener noreferrer">2025 Silicon Valley Index</a>, 66% of the region’s technology workers are foreign-born. In other words, immigration is not a side story in the Valley; it is one of the main reasons the Valley exists in its current form.</p>
+        <p>
+          So, who makes this economic powerhouse run? Immigrants, approximately two-thirds. The region’s labour force, from software engineers and chip designers, reflects a long-standing dependence on workers born elsewhere. According to the
+          <a href="https://www.spokesman.com/stories/2025/mar/11/two-thirds-of-silicon-valley-tech-workers-are-fore/" target="_blank" rel="noopener noreferrer">2025 Silicon Valley Index</a>,
+          66% of the region’s technology workers are foreign-born. In other words, immigration is not a side story in the Valley; it is one of the main reasons the Valley exists in its current form.
+        </p>
 
         <h2>Immigrant workforce: Essential at both ends of the economy</h2>
 
-        <p>Any serious account of immigration in Silicon Valley has to start with a basic fact: immigrants are concentrated at both the high and low ends of the labour market.</p>
+        <p>
+          Any serious account of immigration in Silicon Valley has to start with a basic fact: immigrants are concentrated at both the high and low ends of the labour market.
+        </p>
 
-        <p>Immigrants account for <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">18% of the workforce in the US</a>, with immigrants largely being represented in sectors such as agriculture, construction and healthcare in addition to tech workers in Silicon Valley. This pattern translates to the <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer>educational spectrum</a>  with immigrants making up a higher number of individuals who graduate without a high school diploma but also a higher number of individuals with graduate degrees.</p>
-        <div style="min-height:501px" id="datawrapper-vis-5jdvW">
-          <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/5jdvW/embed.js" charset="utf-8" data-target="#datawrapper-vis-5jdvW">
-          </script>
-          <noscript>
-          <img src="https://datawrapper.dwcdn.net/5jdvW/full.png" alt=" Education Levels of Employed US ADULTS (16 OR OLDER) 2022 (Grouped column chart)" />
-          </noscript>
-        </div>                                                                                                                                                                                                                                                                                                                                                                                                                           
+        <p>
+          Immigrants account for
+          <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">18% of the workforce in the US</a>,
+          with immigrants largely being represented in sectors such as agriculture, construction and healthcare in addition to tech workers in Silicon Valley. This pattern translates to the
+          <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">educational spectrum</a>
+          with immigrants making up a higher number of individuals who graduate without a high school diploma, but also a higher number of individuals with graduate degrees.
+        </p>
 
-        <p>This helps explain why immigrants often fill jobs that complement, rather than simply replace, native-born workers. Some bring highly specialised skills that are scarce in the domestic labour market; others take difficult, lower-paid jobs that many US-born workers avoid.</p>
+        <div class="chart-wrap">
+          <div style="min-height: 501px;" id="datawrapper-vis-5jdvW">
+            <script
+              type="text/javascript"
+              defer
+              src="https://datawrapper.dwcdn.net/5jdvW/embed.js"
+              charset="utf-8"
+              data-target="#datawrapper-vis-5jdvW">
+            </script>
+            <noscript>
+              <img
+                src="https://datawrapper.dwcdn.net/5jdvW/full.png"
+                alt="Education Levels of Employed US Adults 2022 grouped column chart" />
+            </noscript>
+          </div>
+        </div>
 
-        <p>Silicon Valley is an especially vivid version of this pattern. The region is where Asian and Hispanic workers are prominent in the low-paying, blue-collar workforce, while foreign-born scientists and engineers are increasingly visible as entrepreneurs and senior managers. These workers are not simply substitutes for native-born labour; they also start businesses and generate jobs and wealth.</p>
+        <p>
+          This helps explain why immigrants often fill jobs that complement, rather than simply replace, native-born workers. Some bring highly specialised skills that are scarce in the domestic labour market; others take difficult, lower-paid jobs that many US-born workers avoid.
+        </p>
 
-        <p>Economists broadly view immigration as a net positive for the US economy because it expands the labour force, boosts consumer spending, and supports business formation. Immigrants have been involved in <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">30% of patents in strategic industries</a>, and more than <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">40% of Fortune 500 companies were founded by immigrants</a>. The Congressional Budget Office has also estimated that higher immigration between 2024 and 2034 will raise <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">U.S. GDP by $8.9 trillion</a>.</p>
+        <p>
+          Silicon Valley is an especially vivid version of this pattern. The region is where Asian and Hispanic workers are prominent in the low-paying, blue-collar workforce, while foreign-born scientists and engineers are increasingly visible as entrepreneurs and senior managers. These workers are not simply substitutes for native-born labour; they also start businesses and generate jobs and wealth.
+        </p>
+
+        <p>
+          Economists broadly view immigration as a net positive for the US economy because it expands the labour force, boosts consumer spending, and supports business formation. Immigrants have been involved in
+          <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">30% of patents in strategic industries</a>,
+          and more than
+          <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">40% of Fortune 500 companies were founded by immigrants</a>.
+          The Congressional Budget Office has also estimated that higher immigration between 2024 and 2034 will raise
+          <a href="https://www.migrationpolicy.org/sites/default/files/publications/mpi-immigrants-us-economy-explainer-2024_final.pdf" target="_blank" rel="noopener noreferrer">U.S. GDP by $8.9 trillion</a>.
+        </p>
 
         <h2>Why the new H-1B fee is a problem for Silicon Valley</h2>
 
-        <p>In September 2025, the Trump administration introduced a new $100,000 fee on every new H1-B visa application. This came as part of Trump’s anti-immigration policies and efforts to focus on the work force focusing on US workers and products.</p>
+        <p>
+          In September 2025, the Trump administration introduced a new $100,000 fee on every new H1-B visa application. This came as part of Trump’s anti-immigration policies and efforts to focus on the workforce, focusing on US workers and products.
+        </p>
 
-        <p>If Silicon Valley employers filed the same number of new petitions as in the previous fiscal year, about 7,660, that would amount to roughly <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$766 million in added fees</a>. The same report says H-1B visa holders accounted for <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">8% of regional productivity</a> across nine key tech industries in the last fiscal year, while approved petitions from Silicon Valley tech companies made up about <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">17% of the national total</a>.</p>
+        <p>
+          If Silicon Valley employers filed the same number of new petitions as in the previous fiscal year, about 7,660, that would amount to roughly
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$766 million in added fees</a>.
+          The same report says H-1B visa holders accounted for
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">8% of regional productivity</a>
+          across nine key tech industries in the last fiscal year, while approved petitions from Silicon Valley tech companies made up about
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">17% of the national total</a>.
+        </p>
 
-        <p>That helps explain why the fee lands differently in Silicon Valley than in most places. The region is unusually exposed to H-1B policy because so much of its innovation economy depends on highly skilled immigrant labour. The new fees are likely to hit smaller companies especially hard, because the largest firms may still be able to absorb the cost while startups and mid-sized firms cannot.</p>
+        <p>
+          That helps explain why the fee lands differently in Silicon Valley than in most places. The region is unusually exposed to H-1B policy because so much of its innovation economy depends on highly skilled immigrant labour. The new fees are likely to hit smaller companies especially hard, because the largest firms may still be able to absorb the cost while startups and mid-sized firms cannot.
+        </p>
 
-        <p>The problem is not just the size of the fee, but how it interacts with the wage structure of the H-1B workforce. The median salary for H-1B workers is <a href="https://www.richmondfed.org/publications/research/economic_brief/2025/eb_25-39" target="_blank" rel="noopener noreferrer">$92,600</a>, which is actually below the new $100,000 fee. The Federal Reserve Bank of Richmond concludes that the fee would likely deter employers from sponsoring many lower-wage H-1B workers, while leaving only the highest-paid, most specialized hires economically viable. Since most H-1B recipients earn below the approximate break-even point for such a cost, the likely result is a significant decline in the inflow of skilled immigrants.</p>
+        <p>
+          The problem is not just the size of the fee, but how it interacts with the wage structure of the H-1B workforce. The median salary for H-1B workers is
+          <a href="https://www.richmondfed.org/publications/research/economic_brief/2025/eb_25-39" target="_blank" rel="noopener noreferrer">$92,600</a>,
+          which is actually below the new $100,000 fee. The Federal Reserve Bank of Richmond concludes that the fee would likely deter employers from sponsoring many lower-wage H-1B workers, while leaving only the highest-paid, most specialized hires economically viable. Since most H-1B recipients earn below the approximate break-even point for such a cost, the likely result is a significant decline in the inflow of skilled immigrants.
+        </p>
 
-        <p>This is a problem for Silicon Valley as it relies on a thick ecosystem of engineers, developers, data specialists, and startup workers across many firms and pay levels. A fee structure that favours only the richest employers and the most elite hires risks narrowing that pipeline.</p>
+        <p>
+          This is a problem for Silicon Valley as it relies on a thick ecosystem of engineers, developers, data specialists, and startup workers across many firms and pay levels. A fee structure that favours only the richest employers and the most elite hires risks narrowing that pipeline.
+        </p>
 
         <h2>The likely negative economic impact</h2>
 
-        <p>The most immediate impact would be on hiring and business costs, but the consequences would not stop there. The ripple effects will move through the broader regional economy.</p>
+        <p>
+          The most immediate impact would be on hiring and business costs, but the consequences would not stop there. The ripple effects will move through the broader regional economy.
+        </p>
 
-        <p>Research suggests that the combined $766 million fee outflow alone could translate into the loss of as many as <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">1,060 jobs</a> across the regional economy, including jobs in restaurants, hospitals, retail, and childcare. It also projects decline of about <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$12 million in local tax revenue</a> and <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$28 million in state tax revenue</a>.</p>
+        <p>
+          Research suggests that the combined $766 million fee outflow alone could translate into the loss of as many as
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">1,060 jobs</a>
+          across the regional economy, including jobs in restaurants, hospitals, retail, and childcare. It also projects decline of about
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$12 million in local tax revenue</a>
+          and
+          <a href="https://www.jointventure.org/images/stories/pdf/h-1b-visas-2025-10-03-jvsv.pdf" target="_blank" rel="noopener noreferrer">$28 million in state tax revenue</a>.
+        </p>
 
-        <p>That broader spillover is crucial. Silicon Valley is not just a cluster of tech campuses. It is a regional economy in which the spending power of high-skilled workers supports a wider network of local services. If firms cut hiring, delay expansion, or move work elsewhere to avoid the fee, the pain will be shared by businesses far outside the tech sector.</p>
+        <p>
+          That broader spillover is crucial. Silicon Valley is not just a cluster of tech campuses. It is a regional economy in which the spending power of high-skilled workers supports a wider network of local services. If firms cut hiring, delay expansion, or move work elsewhere to avoid the fee, the pain will be shared by businesses far outside the tech sector.
+        </p>
 
-        <p>There is also the reality that when U.S. firms face difficulties hiring H-1B workers, they may shift operations abroad, particularly to places such as India and Canada. Another grim reality for Silicon Valley could involve the foreign talent they would recruit before the visa fee being recruited by competing companies and locations, with nations such as the UK eager for such talent.</p>
+        <p>
+          There is also the reality that when U.S. firms face difficulties hiring H-1B workers, they may shift operations abroad, particularly to places such as India and Canada. Another grim reality for Silicon Valley could involve the foreign talent they would recruit before the visa fee being recruited by competing companies and locations, with nations such as the UK eager for such talent.
+        </p>
 
-        <p>So, can Silicon Valley survive without immigrants? Technically, yes. But it would survive as something smaller, slower, and less globally dominant. Immigration has never been a supplement to the Valley’s success; it is one of its core engines. Take that away, and what remains is not collapse, but erosion.</p>
+        <p>
+          So, can Silicon Valley survive without immigrants? Technically, yes. But it would survive as something smaller, slower, and less globally dominant. Immigration has never been a supplement to the Valley’s success; it is one of its core engines. Take that away, and what remains is not collapse, but erosion.
+        </p>
       </article>
 
+      <div class="footer-rule">
+        Silicon Valley, immigration, and economic change
+      </div>
     </main>
   </div>
 </body>
 </html>
+
+   
+    
+     
